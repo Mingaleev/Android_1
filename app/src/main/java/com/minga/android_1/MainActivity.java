@@ -1,5 +1,6 @@
 package com.minga.android_1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         final ToggleButton toggleButton = findViewById(R.id.tb_background);
         final LinearLayout linearLayout = findViewById(R.id.view_main);
         final TextView textView = findViewById(R.id.tv_top);
+        final Intent i;
+        i = new Intent(this,second.class);
+
 
         toggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 if (toggleButton.isChecked()){
                     textView.setText("Не получилось!хаха");
                 } else{
-                    linearLayout.setBackgroundColor(4294965);
+                    startActivity(i);
                 }
             }
         });
+
 
 
 
@@ -41,9 +46,11 @@ public class MainActivity extends AppCompatActivity {
             Switch swi = findViewById(R.id.swi);
             CheckBox checkBox = findViewById(R.id.checkbox);
 
+
             EditText editTextName = findViewById(R.id.etName);
             @Override
             public void onClick(View v) {
+
                 try {
                     if (swi.isChecked()){
                         if (checkBox.isChecked()){
