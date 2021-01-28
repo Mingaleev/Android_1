@@ -6,6 +6,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_start = findViewById(R.id.btn_start);
         Switch swi = findViewById(R.id.swi);
         CheckBox checkBox = findViewById(R.id.checkbox);
+        ToggleButton toggleButton = findViewById(R.id.tb_background);
 
     }
 }
