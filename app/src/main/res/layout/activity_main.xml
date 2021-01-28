@@ -26,12 +26,19 @@
 
     <Switch
         android:id="@+id/swi"
+        android:fontFamily="serif"
         android:text="Ваш пол"
         android:textOn="Муж"
         android:textOff="Жен"
         android:showText="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:text="Вам больше 18?"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <Button
         android:id="@+id/btn_start"
